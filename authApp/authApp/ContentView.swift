@@ -50,4 +50,23 @@ struct WebView_Previews : PreviewProvider {
         WebView(request: URLRequest(url: URL(string: "https://www.apple.com")!))
     }
 }
-#endif 
+#endif
+
+//struct ContentView : UIViewRepresentable {
+//
+//    func makeUIView(context: Context) -> WKWebView  {
+//        return WKWebView()
+//    }
+//
+//    func updateUIView(_ uiView: WKWebView, context: Context) {
+//        uiView.load(URLRequest(url: URL(string: "https://www.apple.com")!))
+//    }
+//}
+//
+//#if DEBUG
+//struct ContentView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+//#endif
