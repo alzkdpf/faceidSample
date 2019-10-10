@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48076274234C16D500154CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48076273234C16D500154CDD /* AppDelegate.swift */; };
+		48076276234C16D500154CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48076275234C16D500154CDD /* SceneDelegate.swift */; };
+		48076278234C16D500154CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48076277234C16D500154CDD /* ViewController.swift */; };
+		4807627B234C16D500154CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48076279234C16D500154CDD /* Main.storyboard */; };
+		4807627D234C16D800154CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4807627C234C16D800154CDD /* Assets.xcassets */; };
+		48076280234C16D800154CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4807627E234C16D800154CDD /* LaunchScreen.storyboard */; };
+		4807628B234C16D900154CDD /* topAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4807628A234C16D900154CDD /* topAuthTests.swift */; };
+		48076296234C16D900154CDD /* topAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48076295234C16D900154CDD /* topAuthUITests.swift */; };
+		480762A5234C18FC00154CDD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480762A4234C18FC00154CDD /* LocalAuthentication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48076287234C16D900154CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48076268234C16D500154CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4807626F234C16D500154CDD;
+			remoteInfo = topAuth;
+		};
+		48076292234C16D900154CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48076268234C16D500154CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4807626F234C16D500154CDD;
+			remoteInfo = topAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48076270234C16D500154CDD /* topAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = topAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48076273234C16D500154CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48076275234C16D500154CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		48076277234C16D500154CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4807627A234C16D500154CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4807627C234C16D800154CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4807627F234C16D800154CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48076281234C16D800154CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48076286234C16D900154CDD /* topAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4807628A234C16D900154CDD /* topAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topAuthTests.swift; sourceTree = "<group>"; };
+		4807628C234C16D900154CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48076291234C16D900154CDD /* topAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48076295234C16D900154CDD /* topAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topAuthUITests.swift; sourceTree = "<group>"; };
+		48076297234C16D900154CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480762A4234C18FC00154CDD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4807626D234C16D500154CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480762A5234C18FC00154CDD /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48076283234C16D900154CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4807628E234C16D900154CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48076267234C16D500154CDD = {
+			isa = PBXGroup;
+			children = (
+				48076272234C16D500154CDD /* topAuth */,
+				48076289234C16D900154CDD /* topAuthTests */,
+				48076294234C16D900154CDD /* topAuthUITests */,
+				48076271234C16D500154CDD /* Products */,
+				480762A3234C18FC00154CDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48076271234C16D500154CDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48076270234C16D500154CDD /* topAuth.app */,
+				48076286234C16D900154CDD /* topAuthTests.xctest */,
+				48076291234C16D900154CDD /* topAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48076272234C16D500154CDD /* topAuth */ = {
+			isa = PBXGroup;
+			children = (
+				48076273234C16D500154CDD /* AppDelegate.swift */,
+				48076275234C16D500154CDD /* SceneDelegate.swift */,
+				48076277234C16D500154CDD /* ViewController.swift */,
+				48076279234C16D500154CDD /* Main.storyboard */,
+				4807627C234C16D800154CDD /* Assets.xcassets */,
+				4807627E234C16D800154CDD /* LaunchScreen.storyboard */,
+				48076281234C16D800154CDD /* Info.plist */,
+			);
+			path = topAuth;
+			sourceTree = "<group>";
+		};
+		48076289234C16D900154CDD /* topAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				4807628A234C16D900154CDD /* topAuthTests.swift */,
+				4807628C234C16D900154CDD /* Info.plist */,
+			);
+			path = topAuthTests;
+			sourceTree = "<group>";
+		};
+		48076294234C16D900154CDD /* topAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48076295234C16D900154CDD /* topAuthUITests.swift */,
+				48076297234C16D900154CDD /* Info.plist */,
+			);
+			path = topAuthUITests;
+			sourceTree = "<group>";
+		};
+		480762A3234C18FC00154CDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				480762A4234C18FC00154CDD /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4807626F234C16D500154CDD /* topAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4807629A234C16D900154CDD /* Build configuration list for PBXNativeTarget "topAuth" */;
+			buildPhases = (
+				4807626C234C16D500154CDD /* Sources */,
+				4807626D234C16D500154CDD /* Frameworks */,
+				4807626E234C16D500154CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = topAuth;
+			productName = topAuth;
+			productReference = 48076270234C16D500154CDD /* topAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48076285234C16D900154CDD /* topAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4807629D234C16D900154CDD /* Build configuration list for PBXNativeTarget "topAuthTests" */;
+			buildPhases = (
+				48076282234C16D900154CDD /* Sources */,
+				48076283234C16D900154CDD /* Frameworks */,
+				48076284234C16D900154CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48076288234C16D900154CDD /* PBXTargetDependency */,
+			);
+			name = topAuthTests;
+			productName = topAuthTests;
+			productReference = 48076286234C16D900154CDD /* topAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48076290234C16D900154CDD /* topAuthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480762A0234C16D900154CDD /* Build configuration list for PBXNativeTarget "topAuthUITests" */;
+			buildPhases = (
+				4807628D234C16D900154CDD /* Sources */,
+				4807628E234C16D900154CDD /* Frameworks */,
+				4807628F234C16D900154CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48076293234C16D900154CDD /* PBXTargetDependency */,
+			);
+			name = topAuthUITests;
+			productName = topAuthUITests;
+			productReference = 48076291234C16D900154CDD /* topAuthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48076268234C16D500154CDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Topco;
+				TargetAttributes = {
+					4807626F234C16D500154CDD = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					48076285234C16D900154CDD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 4807626F234C16D500154CDD;
+					};
+					48076290234C16D900154CDD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 4807626F234C16D500154CDD;
+					};
+				};
+			};
+			buildConfigurationList = 4807626B234C16D500154CDD /* Build configuration list for PBXProject "topAuth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48076267234C16D500154CDD;
+			productRefGroup = 48076271234C16D500154CDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4807626F234C16D500154CDD /* topAuth */,
+				48076285234C16D900154CDD /* topAuthTests */,
+				48076290234C16D900154CDD /* topAuthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4807626E234C16D500154CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48076280234C16D800154CDD /* LaunchScreen.storyboard in Resources */,
+				4807627D234C16D800154CDD /* Assets.xcassets in Resources */,
+				4807627B234C16D500154CDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48076284234C16D900154CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4807628F234C16D900154CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4807626C234C16D500154CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48076278234C16D500154CDD /* ViewController.swift in Sources */,
+				48076274234C16D500154CDD /* AppDelegate.swift in Sources */,
+				48076276234C16D500154CDD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48076282234C16D900154CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4807628B234C16D900154CDD /* topAuthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4807628D234C16D900154CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48076296234C16D900154CDD /* topAuthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48076288234C16D900154CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4807626F234C16D500154CDD /* topAuth */;
+			targetProxy = 48076287234C16D900154CDD /* PBXContainerItemProxy */;
+		};
+		48076293234C16D900154CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4807626F234C16D500154CDD /* topAuth */;
+			targetProxy = 48076292234C16D900154CDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48076279234C16D500154CDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4807627A234C16D500154CDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4807627E234C16D800154CDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4807627F234C16D800154CDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48076298234C16D900154CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48076299234C16D900154CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4807629B234C16D900154CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NS3VC422G;
+				INFOPLIST_FILE = topAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topco.unofficial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4807629C234C16D900154CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NS3VC422G;
+				INFOPLIST_FILE = topAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topco.unofficial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4807629E234C16D900154CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NS3VC422G;
+				INFOPLIST_FILE = topAuthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topco.authApp.sbtype.topAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/topAuth.app/topAuth";
+			};
+			name = Debug;
+		};
+		4807629F234C16D900154CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NS3VC422G;
+				INFOPLIST_FILE = topAuthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topco.authApp.sbtype.topAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/topAuth.app/topAuth";
+			};
+			name = Release;
+		};
+		480762A1234C16D900154CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NS3VC422G;
+				INFOPLIST_FILE = topAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topco.authApp.sbtype.topAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = topAuth;
+			};
+			name = Debug;
+		};
+		480762A2234C16D900154CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NS3VC422G;
+				INFOPLIST_FILE = topAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topco.authApp.sbtype.topAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = topAuth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4807626B234C16D500154CDD /* Build configuration list for PBXProject "topAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48076298234C16D900154CDD /* Debug */,
+				48076299234C16D900154CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4807629A234C16D900154CDD /* Build configuration list for PBXNativeTarget "topAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4807629B234C16D900154CDD /* Debug */,
+				4807629C234C16D900154CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4807629D234C16D900154CDD /* Build configuration list for PBXNativeTarget "topAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4807629E234C16D900154CDD /* Debug */,
+				4807629F234C16D900154CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480762A0234C16D900154CDD /* Build configuration list for PBXNativeTarget "topAuthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480762A1234C16D900154CDD /* Debug */,
+				480762A2234C16D900154CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48076268234C16D500154CDD /* Project object */;
+}
